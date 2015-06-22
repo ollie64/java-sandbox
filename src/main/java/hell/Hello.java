@@ -24,7 +24,7 @@ class Hello {
 
             Files.createDirectories(pdst.getParent());
 
-            // FIXME convert json String to Iterable
+            // FIXME convert json String to Iterable[String]
             Files.write(ptmp, Collections.singletonList(json), CHARSET);
 
             Files.move(ptmp, pdst, ATOMIC_MOVE);
@@ -50,20 +50,6 @@ class Hello {
             e.printStackTrace();
         }
 
-//        BufferedWriter out;
-//        out = new BufferedWriter(
-//               new OutputStreamWriter(
-//                new FileOutputStream(
-//                 new File("/Users/obaskakov/data/tmp.txt"))));
-
-
-
-
-
-//        out.write("dsadsadsas");
-//        out.newLine();
-
-//        out.close();
 
     }
 }
